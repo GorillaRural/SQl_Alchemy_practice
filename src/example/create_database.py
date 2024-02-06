@@ -21,7 +21,7 @@ def _load_fake_data(session: Session):
 
     for key, it in enumerate(lessons_names):
         lesson = Lesson(lesson_title=it)
-        lesson.groups.append(group1)
+        lesson.groups.append(group1)    
         if key % 2 == 0:
             lesson.groups.append(group2)
         session.add(lesson)
